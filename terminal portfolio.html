@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Basif Shafi</title>
+ <link rel="icon" href="/034b66a1-c685-4011-8ad8-5718511d5f18_20250804_155637_0000 (1).png" type="image/png">
+ <meta name="theme-color" content="transparent" />
+</head>
+  <style>
+  *{
+   font-family: roboto;
+  }
+  
+     body{
+      height:100vh;
+      width: 100%;
+      margin:0;
+      background:#EA7C7CEB;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: bdydecor 30s infinite;
+     }
+     
+     @keyframes bdydecor{
+      0%{
+       background: #5449E2;
+      }
+      
+      10%{
+       background:#56D662 ;
+      }
+      
+      20%{
+       background: #12ECE6;
+      }
+      
+      30%{
+       background: #F1F07D;
+      }
+      
+      40%{
+       background: #CD1818;
+      }
+      50%{
+       background: #DD8A2B;
+      }
+      
+      60%{
+       background: #4F0B54;
+      }
+      
+      70%{
+       background: #F87060;
+      }
+      
+      80%{
+       background :#364627;
+      }
+      
+      90%{
+       background: #9F341D9E;
+      }
+      
+      100%{
+       background: #21170B;
+      }
+     }
+     nav{
+      height: 2.4rem;
+      width: 20rem;
+      padding: 5px;
+      border-radius: 5px 5px 0px 0px;
+      background :#ECEEF4;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+     }
+     
+     nav img{
+      height:2rem;
+      width: 2rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 8px;
+      border: 1px solid #EBE1E1;
+     }
+     
+     ::-webkit-scrollbar{
+      display: none;
+     }
+     
+     .dots{
+      width: 20%;
+      height: 2.4rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
+     }
+     
+     .dots .dot1{
+      height: 1rem;
+      width: 1rem;
+      background: #AF3068;
+      border-radius: 50%;
+      animation: decor 3s infinite;
+     }
+     
+     @keyframes decor{
+      0%{
+       background: #5449E2;
+      }
+      50%{
+       background: #DD8A2B;
+      }
+      
+      100%{
+       background: #21170B;
+      }
+     }
+     
+      .dots .dot2 {
+       height: 1rem;
+       width: 1rem;
+       background: #443EEB;
+       border-radius: 50%;
+       animation: decor2 3s infinite;
+     }
+     
+     @keyframes decor2{
+      0%{
+       background: #40E9BC;
+      }
+      50%{
+       background: #BF2BDD;
+      }
+      
+      100%{
+       background: #E32929;
+      }
+     }
+       .dots .dot3 {
+        height:1rem;
+        width: 1rem;
+        background: #55CD89;
+        border-radius: 50%;
+        animation: decor3 3s infinite;
+     }
+     
+     @keyframes decor3{
+      0%{
+       background: #124E4F;
+      }
+      50%{
+       background: #8F3877;
+      }
+      
+      100%{
+       background: #EE9B37;
+      }
+     }
+     #container{
+      height:22rem;
+      width: 20rem;
+      backdrop-filter: blur(20px) saturate(186%);
+      -webkit-backdrop-filter: blur(20px) saturate(186%);
+      background-color: rgba(255, 255, 255, 0.57);
+      border-radius: 0px 0px 5px 5px;
+      border: none;
+      padding: 5px;
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      overflow: scroll;
+      scroll-behavior: smooth;
+     }
+     
+     
+      .info{
+      height:22rem;
+      width: 19rem;
+      margin-top: 10px;
+      padding: 0;
+      margin: 0;
+      
+     }
+     
+     .info p{
+       font-size: 13px;
+       font-weight: 550;
+       padding: 0;
+       margin: 0;
+       text-align: start;
+     }
+   
+     .content{
+      height:22rem;
+      width: 19rem;
+      margin: 0px;
+      padding: 0;
+     }
+     
+     .content .localhost{
+      display: inline;
+      font-size: 13px;
+      color: #191E5C;
+      font-weight: 550;
+      padding: 0;
+      margin: 0;
+      
+     }
+     .content .choice{
+      border: none;
+      background: none;
+      padding: 5px 2px;
+      outline :none;
+      width: 50%;
+     }
+     .items-left{
+      color: #191E5C;
+      margin-top: 10px;
+      line-height: 1.7;
+      font-weight: 515;
+      
+     }
+     .items-right {
+       color: #0B0D11;
+       font-size: 12px;
+       font-weight: 500;
+       line-height: 1.7;
+       
+      }
+     
+     
+  </style>
+<body>
+ <nav>
+  <div style="display: flex; align-items: center;">
+  <img src="/034b66a1-c685-4011-8ad8-5718511d5f18_20250804_155637_0000 (1).png" alt="logo" />
+   <span style="color: #0B0D11 ; font-size: 14px; font-weight:500; text-shadow:0.5px 0.5px 0.5px grey">Basif Shafi</span>
+   </div>
+   <div class="dots">
+      <div class="dot1">
+       
+      </div>
+      
+      <div class="dot2">
+       
+      </div>
+      
+      <div class="dot3">
+       
+      </div>
+   </div>
+ </nav>
+ 
+   <div id="container">
+
+     <div class="info">
+     <p>For available commands type 'help'.</p>
+       <div class="content">
+
+      </div>
+        
+          <div class="inputbox">
+           
+          </div>
+          <div class="calledfun">
+           
+           </div>
+   
+       </div>
+       
+     
+     
+   </div>
+</body>
+   <script>
+   
+    let promptCounter = 0;
+
+function addPrompt(afterElement = null) {
+ let promptDiv = document.createElement("div");
+ promptDiv.classList.add("prompt");
+ 
+ let promptId = "choice_" + (++promptCounter);
+ promptDiv.innerHTML = `
+        <span class="localhost">@guestlocalhost :</span>
+        <input type="text" id="${promptId}" class="choice" placeholder="" autofocus />
+    `;
+ 
+ if (afterElement) {
+  afterElement.insertAdjacentElement("afterend", promptDiv);
+ } else {
+  document.querySelector('.content').appendChild(promptDiv);
+ }
+ 
+ attachInputEvents(document.getElementById(promptId), promptDiv);
+}
+
+function attachInputEvents(inputChoice, promptDiv) {
+ inputChoice.addEventListener('keydown', function(event) {
+  let calledFun = document.createElement('div');
+  calledFun.classList.add('calledfun');
+  
+  let funchelp = function() {
+   event.preventDefault();
+   calledFun.innerHTML = `
+                <p class="items-left">basif &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span class="items-right">About me.</span></p>
+                
+                <p class="items-left">contact&nbsp &nbsp &nbsp &nbsp <span class="items-right">Contact through social networks.</span></p>
+                
+                <p class="items-left">help &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="items-right">Open the help menu.</span></p>
+                
+                <p class="items-left">skill &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span class="items-right">Shows all skills.</span></p>
+                
+                <p class="items-left">clear &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span class="items-right">Clears the terminal.</span></p>
+            `;
+   promptDiv.insertAdjacentElement("afterend", calledFun);
+   inputChoice.disabled = true;
+   addPrompt(calledFun);
+  };
+  
+  let funcContact=function(){
+    calledFun.innerHTML=`
+         <p class="items-left">instagram &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span class="items-right">Redirect to Instagram.</span></p>
+  
+         <p class="items-left">whatsapp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span class="items-right">Redirect to WhatsApp.</span></p>
+         
+         <p class="items-left">facebook &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="items-right">Redirect to Facebook.</span></p>
+         `
+       
+          promptDiv.insertAdjacentElement("afterend", calledFun);
+          inputChoice.disabled = true;
+          addPrompt(calledFun);
+      }
+
+ let funcFb=function(){
+  location.href='https://www.facebook.com/share/1AEcMRQcWr/'
+ }
+ 
+ let funcIns=function(){
+  location.href='https://www.instagram.com/___basifff__02/profilecard/?igsh=MXUyNXgyb2ExZXBicA=='
+ }
+  
+  let funcWhatsappp=function(){
+   location.href='https://wa.link/3v9ovm'
+  } 
+  
+  let funcabout = function() {
+   calledFun.innerHTML = `<span class="items-right">Hi, I’m Basif Shafi Wani, a passionate web-developer and tech enthusiast.
+
+    I enjoy exploring programming, web development, and creative projects.
+
+
+    Problem-solving and building useful tools inspire me.
+
+
+    I’m always curious about new technologies and ways to improve my skills.
+
+
+     My goal is to create projects that make life easier and more interesting.
+</span>`;
+   promptDiv.insertAdjacentElement("afterend", calledFun);
+   inputChoice.disabled = true;
+   addPrompt(calledFun);
+  };
+  
+  let funcSkills=function(){
+   calledFun.innerHTML = `
+         <p class="items-left">Web developer&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="items-right">Html5 , Css3 , Bootstrap , JS , Php , Mysql , Python , C.</span></p>
+  
+         <p class="items-left">Graphic designer &nbsp &nbsp &nbsp &nbsp &nbsp <span class="items-right">Coreldraw , Canva , Msword.</span> </p>
+         
+         <p class="items-left">Data-entry operator &nbsp &nbsp &nbsp <span class="items-right">Msexcel , Tally Erp.</span></p>
+         `
+
+     promptDiv.insertAdjacentElement("afterend", calledFun);
+     inputChoice.disabled = true;
+     addPrompt(calledFun);
+  }
+  
+  let funcClear = function() {
+   document.querySelector('.content').innerHTML = "";
+   addPrompt();
+  };
+  
+  let funcElse = function() {
+   calledFun.innerHTML = `<span class="items-right">Unknown command</span>`;
+   promptDiv.insertAdjacentElement("afterend", calledFun);
+   inputChoice.disabled = true;
+   addPrompt(calledFun);
+  };
+  
+  if (event.key === 'Enter') {
+   let value = inputChoice.value.trim();
+   if (value === 'help') {
+    funchelp();
+   }
+   
+   else if(value==''){
+    calledFun.innerHTML = `<span class="items-right">Command can't be empty.</span>`;
+    promptDiv.insertAdjacentElement("afterend", calledFun);
+    inputChoice.disabled = true;
+    addPrompt(calledFun);
+   }
+   
+   else if (value === 'basif') {
+    funcabout();
+   } 
+   
+   else if (value === 'clear') {
+    funcClear();
+   }
+   
+   else if (value === 'contact') {
+     funcContact()
+    }
+    
+   
+   else if (value === 'whatsapp'){
+    funcWhatsappp()
+    }
+    
+    else if(value==='instagram'){
+     funcIns()
+    }
+    
+    else if(value==='facebook'){
+     funcFb()
+    }
+    
+    else if(value==='skills'){
+     funcSkills()
+    }
+    
+    else {
+    funcElse();
+   }
+  }
+ });
+}
+
+addPrompt();
+   </script>
+</html>
